@@ -1,0 +1,18 @@
+{
+  "name": "tangalab",
+  "version": "1.0.0",
+  "description": "O'quvchilarni rag'batlantirish uchun tanga tizimi",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.62.2",
+    "vite": "^5.4.0"
+  }
+}
