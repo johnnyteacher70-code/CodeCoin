@@ -10,16 +10,17 @@
   --surface:     #FFFFFF;
   --surface-2:   #F8FAFC;
 
-  --blue:        #2563EB;
-  --blue-light:  #EFF6FF;
-  --blue-mid:    #DBEAFE;
-  --blue-dark:   #1D4ED8;
-  --blue-grad:   linear-gradient(135deg, #2563EB, #1D4ED8);
-  --blue-hero:   linear-gradient(135deg, #1E40AF 0%, #2563EB 50%, #3B82F6 100%);
+  --blue:        #6366F1;
+  --blue-light:  #EEF2FF;
+  --blue-mid:    #E0E7FF;
+  --blue-dark:   #4F46E5;
+  --blue-grad:   linear-gradient(135deg, #6366F1, #8B5CF6);
+  --blue-hero:   linear-gradient(135deg, #6366F1, #8B5CF6);
 
   --gold:        #F59E0B;
   --gold-light:  #FEF3C7;
   --gold-dark:   #D97706;
+  --gold-grad:   linear-gradient(135deg, #FCD34D, #F59E0B);
 
   --green:       #10B981;
   --green-light: #ECFDF5;
@@ -34,14 +35,14 @@
   --border:      #E2E8F0;
   --border-2:    #CBD5E1;
 
-  --shadow-sm:   0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md:   0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
-  --shadow-lg:   0 10px 40px rgba(0,0,0,0.1);
-  --shadow-blue: 0 4px 20px rgba(37,99,235,0.25);
+  --shadow-sm:   0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.04);
+  --shadow-md:   0 4px 16px rgba(15,23,42,0.08), 0 2px 6px rgba(15,23,42,0.04);
+  --shadow-lg:   0 10px 40px rgba(15,23,42,0.1);
+  --shadow-blue: 0 4px 20px rgba(99,102,241,0.3);
 
   --radius-sm:   10px;
-  --radius-md:   14px;
-  --radius-lg:   18px;
+  --radius-md:   16px;
+  --radius-lg:   20px;
   --radius-xl:   24px;
   --radius-full: 9999px;
 
@@ -57,9 +58,10 @@ html { font-size: 16px; -webkit-tap-highlight-color: transparent; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, 'SF Pro Text', 'Segoe UI', sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, 'Segoe UI', sans-serif;
   min-height: 100dvh;
   line-height: 1.5;
+  letter-spacing: -0.01em;
 }
 
 /* ─── Loading ────────────────────────────────────────────────── */
@@ -101,11 +103,12 @@ body {
 }
 .login-brand-icon {
   width: 40px; height: 40px;
-  background: var(--blue);
-  border-radius: 10px;
+  background: var(--gold-grad);
+  border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  color: #fff; font-weight: 900; font-size: 1rem;
+  color: #78350F; font-weight: 900; font-size: 1.05rem;
   letter-spacing: -0.05em;
+  box-shadow: 0 2px 8px rgba(245,158,11,0.35);
 }
 .login-brand-name { font-size: 1.1rem; font-weight: 700; color: var(--text); }
 
@@ -287,10 +290,11 @@ body {
 }
 .sidebar-brand-icon {
   width: 36px; height: 36px;
-  background: var(--blue);
-  border-radius: 9px;
+  background: var(--gold-grad);
+  border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  color: #fff; font-weight: 900; font-size: 0.85rem;
+  color: #78350F; font-weight: 900; font-size: 0.85rem;
+  box-shadow: 0 2px 8px rgba(245,158,11,0.35);
 }
 .sidebar-brand-name { font-size: 1rem; font-weight: 700; color: var(--text); }
 
@@ -349,7 +353,7 @@ body {
 .topbar-avatar {
   width: 36px; height: 36px;
   border-radius: 50%;
-  background: var(--blue);
+  background: var(--blue-grad);
   color: #fff; font-weight: 700; font-size: 0.8rem;
   display: flex; align-items: center; justify-content: center;
 }
